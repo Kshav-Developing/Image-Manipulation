@@ -1,0 +1,25 @@
+from PIL import Image, ImageFilter
+
+image = Image.open("photos\\pic.jpg")
+
+# basic filters (fixed amount)
+image_blur = image.filter(ImageFilter.BLUR)
+image_contour = image.filter(ImageFilter.CONTOUR)
+image_detail = image.filter(ImageFilter.DETAIL)
+image_edge = image.filter(ImageFilter.EDGE_ENHANCE)
+image_edge_more = image.filter(ImageFilter.EDGE_ENHANCE_MORE)
+image_findedges = image.filter(ImageFilter.FIND_EDGES)
+image_emboss = image.filter(ImageFilter.EMBOSS)
+image_sharpen = image.filter(ImageFilter.SHARPEN)
+image_smooth = image.filter(ImageFilter.SMOOTH)
+image_smoothmore = image.filter(ImageFilter.SMOOTH_MORE)
+
+image_blur.show()
+image_detail.show()
+image_contour.show()
+image_edge_more.show()
+image_findedges.show()
+image_emboss.show()
+image_sharpen.show()
+image_smooth.show()
+image_smoothmore.show()
